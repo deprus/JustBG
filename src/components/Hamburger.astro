@@ -1,0 +1,52 @@
+<div class="hamburger-container open">
+  <button class="hamburger-button">
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="24"
+      height="24"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      stroke-width="2"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      class="hamburger-svg"
+      ><line x1="4" x2="20" y1="12" y2="12"></line><line
+        x1="4"
+        x2="20"
+        y1="6"
+        y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg
+    >
+    <path
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"></path>
+  </button>
+</div>
+
+<style>
+  .open {
+    display: flex;
+  }
+
+  .hamburger-container {
+    animation: moveDown 0.5s;
+  }
+
+  .hamburger-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .hamburger-svg {
+    height: 4rem;
+    width: 4rem;
+  }
+
+  @media (min-width: 1024px) {
+    .hamburger-container {
+      display: none;
+    }
+  }
+</style>

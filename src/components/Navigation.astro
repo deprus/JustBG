@@ -1,0 +1,57 @@
+---
+import Logo from "./Logo.astro";
+import Hamburger from "./Hamburger.astro";
+import MobileNavigation from "./MobileNavigation.astro";
+---
+
+<nav class="header-nav">
+  <div class="header-nav-container">
+    <Logo />
+    <div class="header-nav-menu">
+      <a href="/" class="header-nav-link">Home</a>
+      <a href="/game-basics" class="header-nav-link">Basics</a>
+      <a href="/school" class="header-nav-link">School</a>
+      <a href="/game-masters" class="header-nav-link">Masters</a>
+      <a href="/game-servers" class="header-nav-link">Game rooms</a>
+      <a href="/miscellaneous" class="header-nav-link">Miscellaneous</a>
+    </div>
+    <Hamburger />
+    <MobileNavigation />
+  </div>
+</nav>
+
+<style>
+  .header-nav {
+    background-color: rgba(34, 77, 106, 0.1);
+    animation: moveDown 0.5s;
+  }
+  .header-nav-container {
+    max-width: 80rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 1rem;
+  }
+
+  .header-nav-menu {
+    display: none;
+  }
+
+  .header-nav-link {
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+  }
+  @media (min-width: 1024px) {
+    .header-nav-menu {
+      display: flex;
+      column-gap: 2rem;
+    }
+  }
+  @media (min-width: 1024px) {
+    .header-nav {
+      padding-right: 2rem;
+      padding-left: 2rem;
+    }
+  }
+</style>

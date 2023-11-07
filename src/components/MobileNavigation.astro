@@ -1,0 +1,83 @@
+<div class="mobile-nav-container hidden">
+  <div class="mobile-nav-close-container">
+    <button class="mobile-nav-close-button">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        class="mobile-nav-close-svg"
+        ><path d="M18 6 6 18"></path><path d="m6 6 12 12"></path></svg
+      >
+    </button>
+  </div>
+  <div class="mobile-nav-menu-container">
+    <a href="/" class="mobile-nav-menu-link">Home</a>
+    <a href="/game-basics" class="mobile-nav-menu-link">Basics</a>
+    <a href="/school" class="mobile-nav-menu-link">School</a>
+    <a href="/game-masters" class="mobile-nav-menu-link">Masters</a>
+    <a href="/game-servers" class="mobile-nav-menu-link">Game rooms</a>
+    <a href="/miscellaneous" class="mobile-nav-menu-link">Miscellaneous</a>
+  </div>
+</div>
+
+<style>
+  .mobile-nav-container {
+    background-color: rgb(74, 50, 168, 0.9);
+    position: fixed;
+    inset: 0 0 0 auto;
+    z-index: 10;
+    width: 100%;
+    padding: 1.5rem 1.5rem;
+    animation: moveDown 0.5s;
+  }
+
+  .mobile-nav-close-container {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+  }
+
+  .mobile-nav-close-button {
+    padding: 0.25rem;
+    border-radius: 0.4rem;
+  }
+
+  .mobile-nav-close-svg {
+    height: 4rem;
+    width: 4rem;
+  }
+
+  .mobile-nav-menu-container {
+    margin-top: 0.5rem;
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+  }
+
+  .mobile-nav-menu-link {
+    font-family: system-ui;
+    display: block;
+    padding: 0.5rem 0.75rem;
+    line-height: 1.75rem;
+    font-weight: 600;
+    font-size: 2rem;
+    border-radius: 0.5rem;
+  }
+
+  @media (min-width: 640px) {
+    .mobile-nav-container {
+      max-width: 24rem;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .mobile-nav-container {
+      display: none;
+    }
+  }
+</style>
