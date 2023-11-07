@@ -1,4 +1,8 @@
-<div class="hamburger-container open">
+---
+const { animation } = Astro.props;
+---
+
+<div class={`${animation} hamburger-container open`}>
   <button class="hamburger-button">
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -27,10 +31,6 @@
 <style>
   .open {
     display: flex;
-  }
-
-  .hamburger-container {
-    animation: moveDown 0.5s;
   }
 
   .hamburger-button {

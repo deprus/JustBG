@@ -1,13 +1,15 @@
 ---
 const pageTitle = "Home";
-import Layout from "../layouts/Layout.astro";
+import Navigation from "../components/Navigation.astro";
+import HomeLayout from "../layouts/HomeLayout.astro";
+import "../styles/global.css";
 ---
 
-<Layout pageTitle={pageTitle}>
+<HomeLayout pageTitle={pageTitle}>
   <main>
     <h1>{pageTitle}</h1>
   </main>
-</Layout>
+</HomeLayout>
 
 <style>
   main {

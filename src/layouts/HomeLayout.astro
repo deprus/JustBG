@@ -1,0 +1,25 @@
+---
+import Header from "../components/Header.astro";
+import BaseLayout from "./BaseLayout.astro";
+---
+
+<BaseLayout>
+  <Header animation="animated" />
+  <slot />
+</BaseLayout>
+
+<script>
+  const mainNav = document.querySelector(".header-nav");
+
+  function changeBgColorOnScroll() {
+    if (scrollY > 20) {
+      mainNav?.classList.add("not-transparent");
+      mainNav?.classList.remove("transparent");
+    } else {
+      mainNav?.classList.add("transparent");
+      mainNav?.classList.remove("not-transparent");
+    }
+  }
+
+  window.addEventListener("scroll", changeBgColorOnScroll);
+</script>

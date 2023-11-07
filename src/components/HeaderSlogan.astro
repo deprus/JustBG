@@ -1,5 +1,9 @@
+---
+const { animation } = Astro.props;
+---
+
 <div class="header-slogan-container">
-  <h1 class="header-slogan-text">
+  <h1 class={`header-slogan-text ${animation}`}>
     <span class="heading-slogan-text-primary">JustBG</span>
     <span class="heading-slogan-text-sub"
       >It's all about
@@ -22,7 +26,6 @@
     color: #fff;
     text-transform: uppercase;
     backface-visibility: hidden;
-    animation: moveDown 0.5s;
   }
 
   .heading-slogan-text-primary {

@@ -1,0 +1,19 @@
+---
+import Navigation from "../components/Navigation.astro";
+import BaseLayout from "./BaseLayout.astro";
+---
+
+<BaseLayout>
+  <header>
+    <Navigation navTransparency="not-transparent" animation="" />
+  </header>
+  <main>
+    <slot />
+  </main>
+</BaseLayout>
+
+<style>
+  main {
+    height: 1000px;
+  }
+</style>

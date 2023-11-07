@@ -1,6 +1,5 @@
 ---
 import "../styles/global.css";
-import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
 
 const { pageTitle } = Astro.props;
@@ -15,7 +14,6 @@ const { pageTitle } = Astro.props;
     <title>JustBG | {pageTitle}</title>
   </head>
   <body>
-    <Header />
     <slot />
     <Footer />
   </body>
@@ -25,17 +23,6 @@ const { pageTitle } = Astro.props;
   const hamburger = document.querySelector(".hamburger-container");
   const mobileNav = document.querySelector(".mobile-nav-container");
   const mobileNavCloseBtn = document.querySelector(".mobile-nav-close-button");
-  const mainNav = document.querySelector(".header-nav");
-
-  function changeBgColorOnScroll() {
-    if (scrollY > 20) {
-      mainNav?.classList.add("scrolled");
-      mainNav?.classList.remove("not-scrolled");
-    } else {
-      mainNav?.classList.remove("scrolled");
-      mainNav?.classList.add("not-scrolled");
-    }
-  }
 
   hamburger?.addEventListener("click", () => {
     hamburger?.classList.toggle("hidden");
@@ -48,6 +35,4 @@ const { pageTitle } = Astro.props;
     hamburger?.classList.toggle("open");
     mobileNav?.classList.toggle("hidden");
   });
-
-  window.addEventListener("scroll", changeBgColorOnScroll);
 </script>

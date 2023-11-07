@@ -1,4 +1,8 @@
-<div class="mobile-nav-container hidden">
+---
+const { animation } = Astro.props;
+---
+
+<div class={`${animation} mobile-nav-container hidden`}>
   <div class="mobile-nav-close-container">
     <button class="mobile-nav-close-button">
       <svg
@@ -34,7 +38,6 @@
     z-index: 10;
     width: 100%;
     padding: 1.5rem 1.5rem;
-    animation: moveDown 0.5s;
   }
 
   .mobile-nav-close-container {

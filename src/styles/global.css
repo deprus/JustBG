@@ -27,8 +27,8 @@ button {
   display: none;
 }
 
-.scrolled {
-  background-color: rgba(34, 77, 106, 0.95);
+.animated {
+  animation: moveDown 0.5s;
 }
 
 @media (max-width: 640px) {

@@ -1,11 +1,12 @@
 ---
 import Navigation from "./Navigation.astro";
 import HeaderSlogan from "./HeaderSlogan.astro";
+const { animation } = Astro.props;
 ---
 
 <header>
-  <Navigation />
-  <HeaderSlogan />
+  <Navigation isNavTransparent="transparent" animation={animation} />
+  <HeaderSlogan animation={animation} />
 </header>
 
 <style>
