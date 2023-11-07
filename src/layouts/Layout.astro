@@ -25,6 +25,17 @@ const { pageTitle } = Astro.props;
   const hamburger = document.querySelector(".hamburger-container");
   const mobileNav = document.querySelector(".mobile-nav-container");
   const mobileNavCloseBtn = document.querySelector(".mobile-nav-close-button");
+  const mainNav = document.querySelector(".header-nav");
+
+  function changeBgColorOnScroll() {
+    if (scrollY > 20) {
+      mainNav?.classList.add("scrolled");
+      mainNav?.classList.remove("not-scrolled");
+    } else {
+      mainNav?.classList.remove("scrolled");
+      mainNav?.classList.add("not-scrolled");
+    }
+  }
 
   hamburger?.addEventListener("click", () => {
     hamburger?.classList.toggle("hidden");
@@ -38,10 +49,5 @@ const { pageTitle } = Astro.props;
     mobileNav?.classList.toggle("hidden");
   });
 
-  // document.querySelectorAll(".header-nav-link").forEach((link) =>
-  //   link.addEventListener("click", () => {
-  //     hamburger?.classList.remove("active");
-  //     navMenu?.classList.remove("active");
-  //   })
-  // );
+  window.addEventListener("scroll", changeBgColorOnScroll);
 </script>

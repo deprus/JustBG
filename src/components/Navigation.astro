@@ -4,7 +4,7 @@ import Hamburger from "./Hamburger.astro";
 import MobileNavigation from "./MobileNavigation.astro";
 ---
 
-<nav class="header-nav">
+<nav class="header-nav not-scrolled">
   <div class="header-nav-container">
     <Logo />
     <div class="header-nav-menu">
@@ -21,10 +21,18 @@ import MobileNavigation from "./MobileNavigation.astro";
 </nav>
 
 <style>
-  .header-nav {
-    background-color: rgba(34, 77, 106, 0.1);
-    animation: moveDown 0.5s;
+  .not-scrolled {
+    background-color: rgba(34, 77, 106, 0.2);
   }
+
+  .header-nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    animation: moveDown 0.5s;
+    z-index: 100;
+  }
+
   .header-nav-container {
     max-width: 80rem;
     display: flex;
@@ -39,9 +47,14 @@ import MobileNavigation from "./MobileNavigation.astro";
   }
 
   .header-nav-link {
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     line-height: 1.5rem;
   }
+
+  .header-nav-link:hover {
+    text-decoration: underline;
+  }
+
   @media (min-width: 1024px) {
     .header-nav-menu {
       display: flex;
