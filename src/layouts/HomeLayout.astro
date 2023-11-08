@@ -15,9 +15,7 @@ const { pageTitle } = Astro.props;
   function changeBgColorOnScroll() {
     if (scrollY > 20) {
       mainNav?.classList.add("not-transparent");
-      mainNav?.classList.remove("transparent");
     } else {
-      mainNav?.classList.add("transparent");
       mainNav?.classList.remove("not-transparent");
     }
   }
