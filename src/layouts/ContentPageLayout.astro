@@ -5,7 +5,7 @@ const { pageTitle } = Astro.props;
 const { bgImage } = Astro.props;
 ---
 
-<BaseLayout>
+<BaseLayout pageTitle={pageTitle}>
   <Navigation navTransparency="not-transparent" animation="" />
   <main>
     <div class={`${bgImage} main-heading-container`}>
@@ -21,20 +21,20 @@ const { bgImage } = Astro.props;
     height: 1000px;
   }
 
-  .bg-board {
-    background-image: url(board.jpg);
+  .bg-basics {
+    background-image: url(basics.jpg);
   }
   .bg-academy {
     background-image: url(academy.jpg);
   }
   .bg-masters {
-    background-image: url(masters-main.jpg);
+    background-image: url(masters.jpg);
   }
-  .bg-venue {
-    background-image: url(venue.jpg);
+  .bg-whereToPlay {
+    background-image: url(whereToPlay.jpg);
   }
-  .bg-pc {
-    background-image: url(pc.jpg);
+  .bg-aboutUs {
+    background-image: url(aboutUs.jpg);
   }
 
   .main-heading-container {

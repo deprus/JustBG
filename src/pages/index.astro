@@ -6,12 +6,109 @@ import "../styles/global.css";
 
 <HomeLayout pageTitle={pageTitle}>
   <main>
-    <h1>{pageTitle}</h1>
+    <section class="features">
+      <div class="features-container">
+        <div class="features-item-container">
+          <div class="features-item-text-container">
+            <h2 class="features-item-heading">Basics</h2>
+            <p class="features-item-description">History, rules, termins</p>
+          </div>
+          <div class="features-item-img-container features-item-img-basics">
+          </div>
+        </div>
+        <div class="features-item-container">
+          <div class="features-item-text-container">
+            <h2 class="features-item-heading">Academy</h2>
+            <p class="features-item-description">Articles, books, matches</p>
+          </div>
+          <div class="features-item-img-container features-item-img-academy">
+          </div>
+        </div>
+        <div class="features-item-container">
+          <div class="features-item-text-container">
+            <h2 class="features-item-heading">Masters</h2>
+            <p class="features-item-description">Ratings, interviews</p>
+          </div>
+          <div class="features-item-img-container features-item-img-masters">
+          </div>
+        </div>
+        <div class="features-item-container">
+          <div class="features-item-text-container">
+            <h2 class="features-item-heading">Where to play</h2>
+            <p class="features-item-description">Live, online, results</p>
+          </div>
+          <div
+            class="features-item-img-container features-item-img-whereToPlay"
+          >
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
 </HomeLayout>
 
 <style>
-  main {
-    height: 100rem;
+  .features-container {
+    margin: 0 auto;
+    max-width: 80rem;
+    padding: 2rem 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .features-item-container {
+    border: solid rgba(34, 77, 106);
+    border-radius: 1rem;
+    padding: 0.5rem;
+    background-color: rgb(205, 208, 208);
+  }
+
+  .features-item-heading {
+    margin-bottom: 0.5rem;
+    font-size: 2rem;
+    line-height: 1.75rem;
+    font-weight: 700;
+  }
+
+  .features-item-description {
+    font-size: 1.5rem;
+    color: rgb(61, 65, 74);
+  }
+
+  .features-item-img-container {
+    margin: 1rem;
+    background-size: cover;
+    background-position: center;
+    height: 15rem;
+  }
+
+  .features-item-img-basics {
+    background-image: url(basics.jpg);
+  }
+  .features-item-img-academy {
+    background-image: url(academy.jpg);
+  }
+  .features-item-img-masters {
+    background-image: url(masters.jpg);
+  }
+  .features-item-img-whereToPlay {
+    background-image: url(whereToPlay.jpg);
+  }
+
+  @media (min-width: 640px) {
+    .features-container {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      padding-top: 4rem;
+      padding-bottom: 4rem;
+    }
+
+    @media (min-width: 1024px) {
+      .features-container {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+      }
+    }
   }
 </style>

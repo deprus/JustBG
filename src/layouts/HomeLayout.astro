@@ -1,9 +1,10 @@
 ---
 import Header from "../components/Header.astro";
 import BaseLayout from "./BaseLayout.astro";
+const { pageTitle } = Astro.props;
 ---
 
-<BaseLayout>
+<BaseLayout pageTitle={pageTitle}>
   <Header animation="animated" />
   <slot />
 </BaseLayout>
