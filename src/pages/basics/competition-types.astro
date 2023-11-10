@@ -3,4 +3,203 @@ import ContentSubPageLayout from "../../layouts/ContentSubPageLayout.astro";
 const pageTitle = "Competition types";
 ---
 
-<ContentSubPageLayout pageTitle={pageTitle} bgImage="bg-basics" />
+<ContentSubPageLayout pageTitle={pageTitle} bgImage="bg-basics">
+  <p>
+    In backgammon, not only individual games or random series of games for
+    stakes (so-called money games or cash games) are played, but also matches.
+    To determine the strongest player among several, a tournament is organized.
+  </p>
+  <h2>Matches</h2>
+  <p>
+    A match is defined as a series of games between two players, continuing
+    until one of the players reaches or exceeds a pre-determined number of
+    points. The player who first reaches or surpasses the required number of
+    points becomes the winner of the match.
+  </p>
+  <p>
+    In matches, a doubling cube is usually used, so the winner of each game in
+    the match adds points equal to the value of the doubling cube after the
+    game, multiplied by the victory's value. The victory's value in a game is
+    determined as usual: one point for a simple win, two points for a gammon,
+    and three points for a backgammon. For example, if a game is won with a
+    gammon and the cube showed 4, the winner of the match adds 2 * 4 = 8 points.
+  </p>
+  <p>
+    When playing with the doubling cube in matches, the Crawford rule is used.
+    It states that as soon as one of the opponents needs only one point to win
+    the match, the next game is played without the doubling cube. This game is
+    called the Crawford game. If the player behind in the score wins this game,
+    the following games are played as usual, with the doubling cube. It is clear
+    that in these games, the player behind will try to use the cube to make up
+    for the points missed.
+  </p>
+  <p>
+    Some frequently occurring situations in matches have special names: DMP
+    (double match point - the deciding game), GG (gammon-go - play for a
+    backgammon), and GS (gammon-save - avoid a backgammon).
+  </p>
+  <p>
+    For example, when you need to score 4 points to win the match and your
+    opponent only needs 2, and they already own the cube set to 2, winning with
+    a backgammon is crucial for you, as it allows you to win the match. Losing
+    with a backgammon has no significance for you, as you lose the match anyway.
+    This situation is called gammon-go for you and gammon-save for your
+    opponent. If each player only needs to win the next game to win the match,
+    it is called double match point.
+  </p>
+  <p>
+    If a player has scored more points in the match than required (as in the
+    example), it does not matter. The main thing is to win the match, not the
+    score with which it is won.
+  </p>
+  <p>
+    Other rules such as automatic doubling, beaver, and the Jacoby rule are not
+    used in matches.
+  </p>
+  <p>
+    The ability to play match games by score, taking into account the Crawford
+    rule, i.e., managing the doubling cube correctly, gives an advantage to a
+    master over a novice.
+  </p>
+  <p>
+    Some players and tournament organizers consider modern match rules not
+    without flaws. They have the following questions:
+  </p>
+  <ul>
+    <li>Why are matches mostly played up to an odd number of points?</li>
+    <li>
+      Why not play matches with a specific number of games or until an equal
+      number of points are exceeded for everyone, and then calculate the point
+      difference to determine the "quality" of the victory? In this case, there
+      would be no need for the Crawford rule, which seems to favor weaker
+      players.
+    </li>
+    <li>
+      Why determine the right to move before each game of the match (in chess,
+      for example, players take turns going first in match games)?
+    </li>
+  </ul>
+  <p>
+    Addressing these questions and considering changes to the rules in
+    backgammon may make matches more interesting and their outcomes more fair,
+    attracting many new players to the game.
+  </p>
+  <h2>Tournaments</h2>
+  <p>
+    Tournaments in backgammon are held when it is necessary to determine the
+    strongest player among several. Before the start of the tournament, its
+    organizers (tournament committee or chief judge) create the tournament
+    regulations. The regulations define the tournament's procedure, the amount
+    of the entry fee for players (if it is not a freeroll - a free tournament),
+    and how the prize pool formed will be distributed among the winners.
+    Usually, tournaments provide for several prize places.
+  </p>
+  <p>
+    Large tournaments usually consist of several smaller tournaments - for
+    masters, experienced players, beginners, etc.
+  </p>
+  <p>Applied tournament formats:</p>
+  <ul>
+    <li>
+      Single elimination (SE) - elimination immediately after the first loss.
+    </li>
+    <li>Double elimination (DE) - elimination after two losses.</li>
+    <li>
+      Swiss system - a system where players with similar scores are paired in
+      subsequent rounds.
+    </li>
+    <li>
+      Round-robin - a system where each participant plays matches with all other
+      participants.
+    </li>
+  </ul>
+  <p>
+    A single-elimination tournament (also called a cup or Olympic system)
+    consists of several consecutive rounds, each of which remaining players are
+    paired off, and each pair plays a match until a certain number of points.
+    Usually, the closer the tournament round is to the final, the longer the
+    match (i.e., played to a higher number of points). Before the tournament
+    starts, a draw is held to determine the pairs. The winner of the match
+    advances to the next round. The number of participants in the tournament
+    decreases with each round, up to the final match, where the two best players
+    compete. The winner of the final becomes the overall tournament winner. This
+    tournament format is most often used by organizers because it is the most
+    expedient.
+  </p>
+  <p>
+    To eliminate situations where potentially strong players are eliminated from
+    the tournament after unexpected losses in the early stages, a
+    double-elimination tournament format is used. In such a tournament, losing a
+    match moves players from the main bracket to an additional bracket, which is
+    initially unfilled. Players who lose their matches while in the additional
+    bracket exit the tournament. At the end of the tournament, the winner of all
+    matches in the additional bracket faces the only remaining player from the
+    main bracket. The regulations of tournaments vary; in some, the winner of
+    this match becomes the overall tournament winner, while in others, if the
+    player from the main bracket loses, an additional final match is played, and
+    the winner of that match becomes the champion.
+  </p>
+  <p>
+    Tournaments using the Swiss system are held with a relatively small number
+    of participants (no more than two or three dozen) and are played over
+    several rounds. Before the tournament starts, a draw is held to determine
+    the pairs for the first round. In subsequent rounds, pairs are formed from
+    players who have scored approximately the same number of points. Such
+    tournaments are longer than elimination tournaments but give all players the
+    opportunity to play an equal number of matches.
+  </p>
+  <p>
+    Tournaments using the round-robin system are played with a small number of
+    players. In this format, each participant plays matches with all other
+    participants in the tournament. This tournament format is used very rarely
+    in backgammon, as it is the most time-consuming.
+  </p>
+  <p><strong>An example schedule for a round-robin tournament:</strong></p>
+  <ul>
+    <li>1st round: 1 — 6, 2 — 5, 3 — 4</li>
+    <li>2nd round: 6 — 4, 5 — 3, 1 — 2</li>
+    <li>3rd round: 2 — 6, 3 — 1, 4 — 5</li>
+    <li>4th round: 6 — 5, 1 — 4, 2 — 3</li>
+    <li>5th round: 3 — 6, 4 — 2, 5 — 1</li>
+  </ul>
+</ContentSubPageLayout>
+
+<style>
+  h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+
+  blockquote {
+    margin-left: 3rem;
+    margin-right: 3rem;
+    font-style: italic;
+  }
+
+  .img-container {
+    text-align: center;
+    margin: 1rem;
+  }
+
+  img {
+    max-width: 100%;
+    max-height: 20rem;
+  }
+
+  p {
+    padding-bottom: 1rem;
+  }
+
+  ol,
+  ul {
+    padding-bottom: 1rem;
+  }
+
+  ul > li {
+    list-style: disc;
+  }
+
+  ol > li {
+    list-style: decimal;
+  }
+</style>

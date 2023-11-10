@@ -1,0 +1,92 @@
+---
+import ContentSubPageLayout from "../../layouts/ContentSubPageLayout.astro";
+const pageTitle = "Chouette";
+---
+
+<ContentSubPageLayout pageTitle={pageTitle} bgImage="bg-basics">
+  <p>
+    What to do when a group of backgammon enthusiasts gathers? A tournament is a
+    long endeavor, but you can play Chouette!
+  </p>
+  <p>
+    It turns out that each backgammon game can be played not only by two players
+    but also by a larger number of players. This collective game is called
+    Chouette.
+  </p>
+  <p>
+    First, each player rolls one die. The player who rolls the highest number
+    becomes the <strong>Master</strong> (in the American version, the Box, from
+    "the man in the box" - the person who is in a tight, i.e., difficult
+    position, is checked). He plays against all the others, who act as one team.
+  </p>
+  <p>
+    The player who rolls the second-highest number becomes the Captain (of the
+    team). It is he who makes all the moves, consulting with the Players
+    (members of the team). If disagreements arise in the team, the Captain makes
+    the final decision. The order of the dice rolls after the first throw also
+    determines the order of precedence when appointing captains for the next
+    games.
+  </p>
+  <div class="img-container">
+    <img src="../chouette.jpg" alt="5 persons playing chouette" />
+  </div>
+  <p>
+    If the team loses a game, the Captain changes to the next player and becomes
+    the last in line for the title of Captain. The Master remains in his place.
+    If the team wins, the Captain becomes the Master, the next team member takes
+    his place, and the former Master enters the team and becomes the last in
+    line.
+  </p>
+  <p>
+    The team can double the stake only by unanimous decision. However, if the
+    Master doubles the stake, each team member makes an individual decision to
+    accept the challenge or pass. Everyone who passes is considered to have lost
+    to the Master and no longer plays in this game. Those who accept the
+    challenge continue to play as a team with a new stake. If they win, each of
+    them receives from the Master the number of points shown on the doubling
+    cube. If they lose, each of them gives the Master the number of points shown
+    on the doubling cube.
+  </p>
+  <p>
+    When playing Chouette, a separate account of won and lost points is kept for
+    each player, taking into account backgammons and gammons, as well as the
+    value of the doubling cube at the end of the game. Using a separate doubling
+    cube for each player will help simplify calculations. A Chouette Calculator
+    program can assist in calculations.
+  </p>
+</ContentSubPageLayout>
+
+<style>
+  h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+
+  blockquote {
+    margin-left: 3rem;
+    margin-right: 3rem;
+    font-style: italic;
+  }
+
+  .img-container {
+    text-align: center;
+    margin: 1rem;
+  }
+
+  img {
+    max-width: 100%;
+    max-height: 20rem;
+  }
+
+  p {
+    padding-bottom: 1rem;
+  }
+
+  ol {
+    padding-bottom: 1rem;
+  }
+
+  ol > li {
+    list-style: decimal;
+  }
+</style>
