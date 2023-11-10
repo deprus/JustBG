@@ -1,0 +1,84 @@
+---
+import ContentSubPageLayout from "../../layouts/ContentSubPageLayout.astro";
+const pageTitle = "Books";
+---
+
+<ContentSubPageLayout pageTitle={pageTitle} bgImage="bg-academy">
+  <p>
+    During the heyday and popularity of backgammon in the second half of the
+    20th century, numerous books on the theory and practice of the game were
+    written. The most significant contributions came from American authors who
+    were strong players of their time and possessed the ability to generalize
+    information and present their thoughts coherently on paper.
+  </p>
+  <p>
+    The initial books on backgammon primarily had an informative and
+    entertaining character. They taught the rules of the game and provided some
+    general advice. Subsequently, specialists approached the seemingly simple
+    folk pastime from a scientific perspective. They meticulously researched
+    many aspects of the game, demonstrating how to play correctly in various
+    situations and describing the fundamental strategies that players should
+    follow for success.
+  </p>
+  <p>
+    Everything was fine until the end of the century when powerful playing
+    programs emerged. Suddenly, it became apparent that not all authors of books
+    were correct. Some books were filled with inaccuracies or even mistakes, as
+    revealed by computer analysis, particularly in the resolution of doubling
+    questions. Many of the strongest players also made errors. For example, some
+    opening moves, previously considered the most correct, were reconsidered.
+    However, the books that withstood the test of time (and computer programs)
+    can now be confidently studied to grasp the laws of the game and its
+    internal beauty.
+  </p>
+  <p>
+    Thanks to the published literature, the terminology of the game gradually
+    became standardized. Concepts such as blot, prime, etc., are widely used by
+    Russian-speaking players, although some attempts have been made in certain
+    books to create Russian names for these terms.
+  </p>
+  <p>
+    <a href="https://www.bkgm.com/books/Euler-EverydayErrorsInCheckerPlay.pdf"
+      >Everyday Errors in Checker Play By Baron Gossett Euler PhD
+    </a>
+  </p>
+</ContentSubPageLayout>
+
+<style>
+  h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+
+  blockquote {
+    margin-left: 3rem;
+    margin-right: 3rem;
+    font-style: italic;
+  }
+
+  .img-container {
+    text-align: center;
+    margin: 1rem;
+  }
+
+  a {
+    text-decoration: underline;
+  }
+
+  img {
+    max-width: 100%;
+    max-height: 20rem;
+  }
+
+  p {
+    padding-bottom: 1rem;
+  }
+
+  ol {
+    padding-bottom: 1rem;
+  }
+
+  ol > li {
+    list-style: decimal;
+  }
+</style>

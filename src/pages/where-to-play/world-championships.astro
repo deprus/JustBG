@@ -1,0 +1,71 @@
+---
+import ContentSubPageLayout from "../../layouts/ContentSubPageLayout.astro";
+const pageTitle = "World championships";
+---
+
+<ContentSubPageLayout pageTitle={pageTitle} bgImage="bg-whereToPlay">
+  <p>
+    Unfortunately, in the history of backgammon, there are no official world
+    championships. This is likely due to the absence of a unified authoritative
+    global organization that brings together all backgammon players worldwide,
+    such as FIFA (in football) or FIDE (in chess).
+  </p>
+  <p>
+    Therefore, the unofficial world championship is considered to be the most
+    prestigious tournament, where the final matches are usually played to 25
+    points. Previously, such tournaments were held from 1967 in the casino
+    capital of the world - Las Vegas. In 1975, the tournament moved to the
+    millionaire's paradise - the Bahamas. These competitions mainly involved
+    American players, so it's not surprising that among the champions of those
+    years, we see only representatives of the USA. Currently, the world champion
+    is determined in the annual tournament held in Monte Carlo, the center of
+    the entertainment industry in Europe.
+  </p>
+  <p>
+    <a href="https://www.backgammonworldchampionship.com/">Website</a>
+  </p>
+  <p>
+    <a href="https://en.wikipedia.org/wiki/List_of_world_backgammon_champions"
+      >List of world backgammon champions
+    </a>
+  </p>
+</ContentSubPageLayout>
+
+<style>
+  h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+
+  blockquote {
+    margin-left: 3rem;
+    margin-right: 3rem;
+    font-style: italic;
+  }
+
+  .img-container {
+    text-align: center;
+    margin: 1rem;
+  }
+
+  a {
+    text-decoration: underline;
+  }
+
+  img {
+    max-width: 100%;
+    max-height: 20rem;
+  }
+
+  p {
+    padding-bottom: 1rem;
+  }
+
+  ol {
+    padding-bottom: 1rem;
+  }
+
+  ol > li {
+    list-style: decimal;
+  }
+</style>

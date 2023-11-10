@@ -1,0 +1,79 @@
+---
+import ContentSubPageLayout from "../../layouts/ContentSubPageLayout.astro";
+const pageTitle = "Giants";
+---
+
+<ContentSubPageLayout pageTitle={pageTitle} bgImage="bg-masters">
+  <p>
+    Since 1993, Yamin Yamin has been sending voting sheets to experts and
+    tournament directors, asking them to list the names of the strongest
+    players, in their opinion, who have participated in live tournaments over
+    the past two years. The vote results are published on the
+    <a href="http://www.flintbg.com/giants.html">website</a>. This way, we get
+    to know the names of the top 64 "living" players in the world - the Giants
+    of Backgammon.
+  </p>
+  <figure>
+    <img src="../mochy.jpg" alt="Painting: Steen's 'Backgammon Fight'" />
+    <figcaption>#1 Masayuki Mochizuki (Mochy)</figcaption>
+  </figure>
+  <figure>
+    <img src="../lylloff.jpg" alt="Painting: Steen's 'Backgammon Fight'" />
+    <figcaption>#2 Sander Lylloff</figcaption>
+  </figure>
+  <figure>
+    <img src="../michy.jpg" alt="Painting: Steen's 'Backgammon Fight'" />
+    <figcaption>#3 Michihito Kageyama (Michy)</figcaption>
+  </figure>
+</ContentSubPageLayout>
+
+<style>
+  h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+
+  blockquote {
+    margin-left: 3rem;
+    margin-right: 3rem;
+    font-style: italic;
+  }
+
+  .img-container {
+    text-align: center;
+    margin: 1rem;
+  }
+
+  a {
+    text-decoration: underline;
+  }
+
+  img {
+    max-width: 100%;
+    max-height: 20rem;
+  }
+
+  p {
+    padding-bottom: 1rem;
+  }
+
+  ol {
+    padding-bottom: 1rem;
+  }
+
+  ol > li {
+    list-style: decimal;
+  }
+
+  img {
+    max-width: 100%;
+    max-height: 20rem;
+  }
+
+  figure {
+    text-align: center;
+    margin: 1rem;
+    font-size: 2rem;
+    font-style: italic;
+  }
+</style>

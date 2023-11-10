@@ -1,0 +1,69 @@
+---
+import ContentSubPageLayout from "../../layouts/ContentSubPageLayout.astro";
+const pageTitle = "Series";
+---
+
+<ContentSubPageLayout pageTitle={pageTitle} bgImage="bg-whereToPlay">
+  <p>
+    Every year, several series of backgammon tournaments are held, and the
+    winner of each series is determined based on the overall results. Below are
+    listed the most popular series.
+  </p>
+  <ul>
+    <li>
+      WBF Golden Circuit - organized by Marco Fornasir (WBF) in Europe and Asia.
+      Consists of several tournaments.
+    </li>
+    <li>
+      GMS (German Masters Series) - organized by Chiva Tafazzoli (WBA) in
+      Central Europe.
+    </li>
+    <li>
+      ABT (American Backgammon Tour) - a series of tournaments in the United
+      States. Consists of two dozen tournaments.
+    </li>
+  </ul>
+</ContentSubPageLayout>
+
+<style>
+  h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+
+  blockquote {
+    margin-left: 3rem;
+    margin-right: 3rem;
+    font-style: italic;
+  }
+
+  .img-container {
+    text-align: center;
+    margin: 1rem;
+  }
+
+  a {
+    text-decoration: underline;
+  }
+
+  ul > li {
+    list-style: disc;
+  }
+
+  img {
+    max-width: 100%;
+    max-height: 20rem;
+  }
+
+  p {
+    padding-bottom: 1rem;
+  }
+
+  ol {
+    padding-bottom: 1rem;
+  }
+
+  ol > li {
+    list-style: decimal;
+  }
+</style>

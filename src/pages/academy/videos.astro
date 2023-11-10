@@ -1,0 +1,70 @@
+---
+import ContentSubPageLayout from "../../layouts/ContentSubPageLayout.astro";
+const pageTitle = "Videos";
+---
+
+<ContentSubPageLayout pageTitle={pageTitle} bgImage="bg-academy">
+  <p>
+    <a
+      href="https://www.youtube.com/playlist?list=PL4fhZXAGchzJzfUt-W8YSPTVuCxtVS0-L"
+      >Series of videos explaining basic principles of backgammon by Backgammon
+      Galaxy's Marc Olsen</a
+    >
+  </p>
+  <p>
+    <a href="https://www.youtube.com/@bgmochy"
+      >YouTube channel of a two-times world champion, #1 giant Mochizuki (Mochy)
+    </a>
+  </p>
+  <p>
+    <a href="https://www.youtube.com/@BackgammonCoaching
+    "
+      >YouTube channel of #4 giant, young prodygy Zdenek Zizka
+    </a>
+  </p>
+  <p>
+    <a href="https://www.youtube.com/@JustinNowellPlaysBG
+    "
+      >Educational content by Justin Nowell
+    </a>
+  </p>
+</ContentSubPageLayout>
+
+<style>
+  h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+
+  blockquote {
+    margin-left: 3rem;
+    margin-right: 3rem;
+    font-style: italic;
+  }
+
+  .img-container {
+    text-align: center;
+    margin: 1rem;
+  }
+
+  a {
+    text-decoration: underline;
+  }
+
+  img {
+    max-width: 100%;
+    max-height: 20rem;
+  }
+
+  p {
+    padding-bottom: 1rem;
+  }
+
+  ol {
+    padding-bottom: 1rem;
+  }
+
+  ol > li {
+    list-style: decimal;
+  }
+</style>

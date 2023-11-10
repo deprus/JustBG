@@ -10,36 +10,20 @@ const description =
   bgImage="bg-whereToPlay"
   description={description}
 >
-  <div class="main-section-lists-container">
-    <div class="main-section-doublelist-container">
-      <h2>Live</h2>
-      <ul class="main-section-list">
-        <a href="academy/articles">
-          <li>Tournament overviews</li>
-        </a>
-        <a href="academy/books">
-          <li>World championships</li>
-        </a>
-        <a href="academy/videos">
-          <li>Series</li>
-        </a>
-      </ul>
-    </div>
-    <div class="main-section-doublelist-container">
-      <h2>Online</h2>
-      <ul class="main-section-list">
-        <a href="academy/articles">
-          <li>Overview</li>
-        </a>
-        <a href="academy/books">
-          <li>WBIF</li>
-        </a>
-        <a href="academy/videos">
-          <li>Rooms</li>
-        </a>
-      </ul>
-    </div>
-  </div>
+  <ul class="main-section-list">
+    <a href="where-to-play/live-tournaments">
+      <li>Tournaments</li>
+    </a>
+    <a href="where-to-play/world-championships">
+      <li>World championships</li>
+    </a>
+    <a href="where-to-play/series">
+      <li>Series</li>
+    </a>
+    <a href="where-to-play/online">
+      <li>Online</li>
+    </a>
+  </ul>
   <div class="main-section-img-container">
     <img
       src="online.jpg"
@@ -51,38 +35,13 @@ const description =
 
 <style>
   ul {
-    padding-left: 2rem;
-    padding-right: 2rem;
-    padding-bottom: 2rem;
+    padding: 2rem;
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
     color: whitesmoke;
     text-decoration: underline;
     font-size: 2.5rem;
-  }
-
-  .main-section-lists-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 5rem;
-    margin-top: 2rem;
-  }
-
-  h2 {
-    font-size: 3rem;
-    border-top: solid whitesmoke;
-    border-bottom: solid whitesmoke;
-  }
-
-  .main-section-doublelist-container {
-    display: flex;
-    gap: 1rem;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    color: whitesmoke;
   }
 
   .main-section-img-container {

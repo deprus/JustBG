@@ -1,0 +1,77 @@
+---
+import ContentSubPageLayout from "../../layouts/ContentSubPageLayout.astro";
+const pageTitle = "Online";
+---
+
+<ContentSubPageLayout pageTitle={pageTitle} bgImage="bg-whereToPlay">
+  <p>
+    To start playing online, you need to either play in browser or install a
+    small app and register. On some servers, you can play both for free and for
+    money.
+  </p>
+  <ul>
+    <li>
+      <a href="https://www.backgammongalaxy.com/">Backgammon Galaxy</a>: Matches
+      with analysis.
+    </li>
+    <li>
+      <a href="https://heroes.backgammonstudio.com/">Backgammon Heroes</a>: A
+      gaming platform with powerful educational features.
+    </li>
+    <li>
+      <a href="https://nextgammon.com/">NextGammon</a>: Matches with GNU
+      analysis.
+    </li>
+    <li>
+      <a href="https://www.playok.com/en/backgammon/">PlayOK</a>: Browser-based
+      game, including on mobile devices.
+    </li>
+    <li>
+      <a href="http://www.dailygammon.com/bg">DailyGammon</a>:
+      Correspondence-based backgammon.
+    </li>
+  </ul>
+</ContentSubPageLayout>
+
+<style>
+  h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+
+  blockquote {
+    margin-left: 3rem;
+    margin-right: 3rem;
+    font-style: italic;
+  }
+
+  .img-container {
+    text-align: center;
+    margin: 1rem;
+  }
+
+  a {
+    text-decoration: underline;
+  }
+
+  ul > li {
+    list-style: disc;
+  }
+
+  img {
+    max-width: 100%;
+    max-height: 20rem;
+  }
+
+  p {
+    padding-bottom: 1rem;
+  }
+
+  ol {
+    padding-bottom: 1rem;
+  }
+
+  ol > li {
+    list-style: decimal;
+  }
+</style>
