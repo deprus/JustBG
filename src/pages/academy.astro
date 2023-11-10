@@ -1,6 +1,59 @@
 ---
-import ContentPageLayout from "../layouts/ContentPageLayout.astro";
+import ContentMainPageLayout from "../layouts/ContentMainPageLayout.astro";
 const pageTitle = "Academy";
+const description =
+  "Success in any endeavor is unthinkable without mastering the skills, and backgammon is no exception. To improve the quality of your game and increase the number of victories in tournaments and matches, it is necessary to read articles, study specialized literature, solve educational tasks, and analyze matches played by masters of the game.";
 ---
 
-<ContentPageLayout pageTitle={pageTitle} bgImage="bg-academy" />
+<ContentMainPageLayout
+  pageTitle={pageTitle}
+  bgImage="bg-academy"
+  description={description}
+>
+  <ul class="main-section-list">
+    <a href="academy/articles">
+      <li>Articles</li>
+    </a>
+    <a href="academy/books">
+      <li>Books</li>
+    </a>
+    <a href="academy/videos">
+      <li>Videos</li>
+    </a>
+  </ul>
+  <div class="main-section-img-container">
+    <img
+      src="learning.webp"
+      alt="girl playing backgammon"
+      class="main-section-img"
+    />
+  </div>
+</ContentMainPageLayout>
+
+<style>
+  ul {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    color: whitesmoke;
+    text-decoration: underline;
+    font-size: 2.5rem;
+  }
+
+  .main-section-img-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .main-section-img {
+    max-width: 95%;
+    max-height: 320px;
+    height: auto;
+  }
+</style>

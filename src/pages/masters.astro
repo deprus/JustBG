@@ -1,6 +1,53 @@
 ---
-import ContentPageLayout from "../layouts/ContentPageLayout.astro";
+import ContentMainPageLayout from "../layouts/ContentMainPageLayout.astro";
 const pageTitle = "Masters";
+const description =
+  "Casual backgammon enthusiasts have always been curious: who is the strongest player of them all? Who understands the game better than ordinary players? Whose games and matches should one study to learn mastery? Despite the presence of several tournament series, backgammon lacks a unified and systematic system to identify the world's best players. The composition of many conducted tournaments is somewhat random. Even the World Championship in Monte Carlo does not always attract all the strongest players. Therefore, several rating systems have been invented by now, and by studying them, one can learn about the names of the best face-to-face players.";
 ---
 
-<ContentPageLayout pageTitle={pageTitle} bgImage="bg-masters" />
+<ContentMainPageLayout
+  pageTitle={pageTitle}
+  bgImage="bg-masters"
+  description={description}
+>
+  <ul class="main-section-list">
+    <li>International titles</li>
+    <li>Giants</li>
+    <li>Interviews</li>
+  </ul>
+  <div class="main-section-img-container">
+    <img
+      src="../legends.jpg"
+      alt="legends of backgammon"
+      class="main-section-img"
+    />
+  </div>
+</ContentMainPageLayout>
+
+<style>
+  ul {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    color: whitesmoke;
+    text-decoration: underline;
+    font-size: 2.5rem;
+  }
+
+  .main-section-img-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .main-section-img {
+    max-width: 95%;
+    max-height: 320px;
+    height: auto;
+  }
+</style>

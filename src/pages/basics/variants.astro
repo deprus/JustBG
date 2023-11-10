@@ -1,0 +1,121 @@
+---
+import ContentSubPageLayout from "../../layouts/ContentSubPageLayout.astro";
+const pageTitle = "Variants";
+---
+
+<ContentSubPageLayout pageTitle={pageTitle} bgImage="bg-basics">
+  <p>
+    Over the years of backgammon's existence, humanity has come up with many
+    variations of this game. Surely, it will come up with more, as the ground
+    for it is quite fertile. When playing short backgammon by standard rules,
+    there are some nuances used only in money games, and their application
+    should be agreed upon in advance to avoid conflicts:
+  </p>
+  <ul>
+    <li>
+      Automatic Double (Autodouble): If, in the initial roll that determines who
+      goes first, both opponents roll an equal number of points, the doubling
+      cube still stays between them but turns to 2. Usually, it is agreed that
+      this rule applies only once per game. The players then continue to roll
+      the dice until it is determined who goes first.
+    </li>
+    <li>
+      Jacoby Rule: If neither player has doubled during the game, backgammon
+      (double win) and gammon (triple win) are not counted.
+    </li>
+    <li>
+      Beaver: If a player is offered to double the stakes, they have the right
+      to double them again immediately, and the cube and the right to the next
+      doubling remain with them.
+    </li>
+    <li>
+      Raccoon: A player who has been offered a beaver can immediately double the
+      stakes again by declaring raccoon. In the continuation of the game, the
+      cube remains with the player who declared beaver. This situation can
+      repeat several times.
+    </li>
+  </ul>
+  <p>
+    Other rules and variations are only slightly different from the standard
+    ones:
+  </p>
+  <p>
+    <strong>Nackgammon</strong>: The most popular variation, included in
+    programs like eXtreme Gammon and GNU Backgammon. The initial setup differs
+    slightly: each side removes one checker from points 8 and 13 and adds them
+    to point 23.
+  </p>
+  <p>
+    <strong>Hypergammon</strong>: Each side has only 3 checkers in this
+    variation, placed initially on points 24, 23, and 22.
+  </p>
+  <p>
+    <strong>Sassangammon</strong>: Introduced in 2008 in California, it involves
+    rolling three dice, but the opponent removes one die of their choice.
+  </p>
+  <p>
+    <strong>Tavla</strong>: The Turkish variant where the starting player rolls
+    the dice again after the initial rolls to determine the right of the first
+    move.
+  </p>
+  <p>
+    <strong>Persian (Caucasian) Backgammon</strong>: After hitting an opponent's
+    checker in your home board, you are not allowed to defend it against a
+    counter hit by moving it onto another of your checkers. You can only cover
+    it with another checker, move it to an open point, or bear it off.
+  </p>
+  <p>
+    <strong>Duplicate Backgammon</strong>: Two standard games are played
+    simultaneously, but only one set of dice is rolled. The other game uses the
+    same rolls made by the opponent.
+  </p>
+  <p>
+    <strong>Egyptian Rule</strong>: Prohibits gathering more than 5 checkers on
+    a single point. Popular in England.
+  </p>
+  <p>
+    These are just a few examples, and many more variations and rules exist. The
+    world of backgammon is rich and diverse, offering players numerous ways to
+    enjoy the game.
+  </p>
+</ContentSubPageLayout>
+
+<style>
+  h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+
+  blockquote {
+    margin-left: 3rem;
+    margin-right: 3rem;
+    font-style: italic;
+  }
+
+  .img-container {
+    text-align: center;
+    margin: 1rem;
+  }
+
+  img {
+    max-width: 100%;
+    max-height: 20rem;
+  }
+
+  p {
+    padding-bottom: 1rem;
+  }
+
+  ol,
+  ul {
+    padding-bottom: 1rem;
+  }
+
+  ul > li {
+    list-style: disc;
+  }
+
+  ol > li {
+    list-style: decimal;
+  }
+</style>

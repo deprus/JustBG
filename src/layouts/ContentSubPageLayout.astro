@@ -1,0 +1,19 @@
+---
+import BaseContentPageLayout from "./BaseContentPageLayout.astro";
+const { pageTitle, bgImage } = Astro.props;
+---
+
+<BaseContentPageLayout pageTitle={pageTitle} bgImage={bgImage}>
+  <section class="main-section-content">
+    <div class="main-section-text-container">
+      <slot />
+    </div>
+  </section>
+</BaseContentPageLayout>
+
+<style>
+  .main-section-text-container {
+    padding: 2rem 5rem;
+    font-size: 1.2rem;
+  }
+</style>

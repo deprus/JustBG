@@ -14,7 +14,9 @@ const { pageTitle } = Astro.props;
     <title>JustBG | {pageTitle}</title>
   </head>
   <body>
-    <slot />
+    <div class="wrapper">
+      <slot />
+    </div>
     <Footer />
   </body>
 </html>

@@ -1,0 +1,165 @@
+---
+import ContentSubPageLayout from "../../layouts/ContentSubPageLayout.astro";
+const pageTitle = "Rules";
+---
+
+<ContentSubPageLayout pageTitle={pageTitle} bgImage="bg-basics">
+  <p>
+    <strong>Backgammon</strong> is a board game for two players on a board
+    consisting of twenty-four narrow triangles called <strong>points</strong>.
+  </p>
+  <p>
+    The triangles alternate in color and are grouped into four groups of six
+    triangles each. Points are numbered separately for each player. The furthest
+    point is the 24th point, which is also the first point for the opponent.
+    Points are grouped into four categories: <strong>homeboard</strong> (1-6),
+    <strong>courtyard</strong> (7-12), opponent's home (19-24), and opponent's
+    courtyard (13-18). The home and courtyard are separated by a <strong
+      >bar</strong
+    >, which divides the board into two halves.
+  </p>
+  <p>
+    Each player has 15 <strong>checkers</strong> of one color. The initial setup
+    of the checkers is as follows: each player has two checkers in the 24th
+    point, five in the 13th, three in the 8th, and five in the 6th.
+  </p>
+  <figure>
+    <img src="../starting-pos.jpg" alt="backgammon starting position" />
+    <figcaption>Starting position</figcaption>
+  </figure>
+  <p>
+    The game uses a pair of regular dice. A larger cube with numbers 2, 4, 8,
+    16, 32, and 64 is used to keep track of the current stake in the game; it is
+    also called the <a href="../basics/doubling-cube" class="link"
+      >doubling cube</a
+    >. At the beginning of the game, it is placed in the middle between the
+    players, showing the number 64, indicating that there have been no doubles
+    yet.
+  </p>
+  <p>
+    <strong
+      >The goal of the game is to move all your checkers into your home and then
+      bear them off the board.</strong
+    >
+  </p>
+  <p>
+    The player who bears off all their checkers first wins the game. To start
+    the game, each player rolls one die, determining which player goes first and
+    which numbers they use for their first move. If both players roll the same
+    numbers, they both roll the dice again until different values appear. The
+    player who rolls the higher number moves their checkers according to the
+    numbers on both dice. After the first move, players take turns rolling two
+    dice and making moves.
+  </p>
+  <p>
+    The number on each die indicates how many points or pips the player must
+    move their checkers towards their home, i.e., from points with higher
+    numbers to points with lower numbers. For white, it's counterclockwise; for
+    black, it's clockwise. The following rules apply:
+  </p>
+  <ol>
+    <li>
+      A checker can only finish its move <strong
+        >on its own or an unoccupied point on the board</strong
+      >, not occupied by two or more opponent checkers.
+    </li>
+    <li>
+      <strong>The numbers on both dice constitute separate moves</strong>. For
+      example, if a player rolls 5 and 3, they can move one checker by three
+      points and another by five, or they can move one checker by eight (five
+      plus three) points, but only if the intermediate point (three or five
+      points away from the starting point) is not occupied by the opponent.
+    </li>
+    <li>
+      If a player rolls a <strong>double</strong>, they use each number on each
+      die <strong>twice</strong>. For instance, if they roll 6-6, they must move
+      their checkers four times by six points each in any combination they
+      choose.
+    </li>
+    <li>
+      <strong>The player must use both numbers rolled</strong>, if allowed by
+      the rules (in the case of a double, they must use all four numbers). When
+      only one move is possible, the player must play the higher number. If a
+      player cannot move any of their checkers, they skip their turn. In the
+      case where a player cannot use all four numbers in a double, they must
+      play as many moves as possible. Refusing a move is not allowed if the
+      result of the move is unfavorable.
+    </li>
+  </ol>
+  <p>
+    A point occupied by a single checker of any color is called a <strong
+      >blot</strong
+    >. If an opponent's checker lands on this point, the blot is hit and placed
+    on the bar.
+  </p>
+  <p>
+    A player with checkers on the bar must, before making other moves, <strong
+      >enter</strong
+    >
+     them into the opponent's home. To do this, they need to sequentially place
+    them on open points numbered from 1 to 6, corresponding to one of the
+    numbers rolled on the dice. For example, if 4 and 6 are rolled, a checker
+    can be entered into the fourth or sixth point of the opponent's home. If the
+    points corresponding to the rolled numbers are closed, the player skips
+    their turn. If there is an opportunity to enter some but not all checkers
+    from the bar, the player must enter the maximum number of checkers and skip
+    the remaining part of the move. After the last checker is entered, the
+    unused value on the dice must be used for regular moves.
+  </p>
+  <p>
+    Once all fifteen checkers are in their home, the player can start <strong
+      >bearing them off</strong
+    > the board. A checker is removed from a point corresponding to one of the
+    values rolled on the dice. If there are no checkers on that point, a regular
+    move must be made with a checker from a point greater than the rolled
+    number. If there are no such checkers left, checkers can be removed from
+    lower points. If, during the bearing off process, one of the checkers is hit
+    and sent to the bar, the player must enter it and re-establish it in their
+    home to continue bearing off checkers.
+  </p>
+  <p>
+    If, after bearing off all their checkers from the board, the loser managed
+    to bear off at least one piece, they lose as many points as shown on the
+    doubling cube at that moment. However, if the loser did not manage to bear
+    off any checkers from the board, they lose a <strong>gammon</strong>, and
+    the winner receives double the number of points. If, moreover, the loser did
+    not bear off any checkers, and one or more of their checkers remain on the
+    bar or in the opponent's home, they lose a <strong>backgammon</strong>. In
+    this case, the winner receives triple the number of points.
+  </p>
+</ContentSubPageLayout>
+<style>
+  h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+
+  img {
+    max-width: 100%;
+  }
+
+  ul,
+  ol,
+  p {
+    padding-bottom: 1rem;
+  }
+
+  ul > li {
+    list-style: disc;
+  }
+
+  ol > li {
+    list-style: decimal;
+  }
+
+  .link {
+    text-decoration: underline;
+  }
+
+  figure {
+    text-align: center;
+    margin: 1rem;
+    font-size: 2rem;
+    font-style: italic;
+  }
+</style>

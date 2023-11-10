@@ -1,6 +1,76 @@
 ---
-import ContentPageLayout from "../layouts/ContentPageLayout.astro";
+import ContentMainPageLayout from "../layouts/ContentMainPageLayout.astro";
 const pageTitle = "Basics";
+const description =
+  "Backgammon is a very democratic game. All you need to start playing is to buy an inexpensive game set (board, chips, and dice) in almost any sports store and read the rules of the game. For online play, you don't even need a board. Once you get into it, you can upgrade your game equipment and start studying educational materials on the game because the world of backgammon, despite the simplicity of its rules, is so rich!";
 ---
 
-<ContentPageLayout pageTitle={pageTitle} bgImage="bg-basics" />
+<ContentMainPageLayout
+  pageTitle={pageTitle}
+  bgImage="bg-basics"
+  description={description}
+>
+  <ul class="main-section-list">
+    <a href="basics/history">
+      <li>History</li>
+    </a>
+    <a href="basics/rules">
+      <li>Rules</li>
+    </a>
+    <a href="basics/doubling-cube">
+      <li>Doubling cube</li>
+    </a>
+    <a href="basics/chouette">
+      <li>Chouette</li>
+    </a>
+    <a href="basics/competition-types">
+      <li>Competition types</li>
+    </a>
+    <a href="basics/etiquette">
+      <li>Etiquette</li>
+    </a>
+    <a href="basics/variants">
+      <li>Variants</li>
+    </a>
+  </ul>
+  <div class="main-section-img-container">
+    <img
+      src="basics1.jpg"
+      alt="children playing backgammon"
+      class="main-section-img"
+    />
+    <img
+      src="basics2.jpg"
+      alt="women playing backgammon"
+      class="main-section-img"
+    />
+  </div>
+</ContentMainPageLayout>
+
+<style>
+  ul {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    color: whitesmoke;
+    text-decoration: underline;
+    font-size: 2.5rem;
+  }
+
+  .main-section-img-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .main-section-img {
+    max-width: 95%;
+    max-height: 320px;
+    height: auto;
+  }
+</style>

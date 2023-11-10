@@ -1,0 +1,140 @@
+---
+import ContentSubPageLayout from "../../layouts/ContentSubPageLayout.astro";
+const pageTitle = "Doubling cube";
+---
+
+<ContentSubPageLayout pageTitle={pageTitle} bgImage="bg-basics">
+  <blockquote>
+    <p>
+      All backgammon players can be divided into two types: those who know how
+      to count moves and those who do not. Only 5 people know how to count, but
+      they cannot do it.
+    </p>
+  </blockquote>
+  <p>
+    The modern version of backgammon emerged in the 18th century, and the
+    doubling cube became an integral part of the game only two centuries later,
+    in the 1920s. The author of the addition of the doubling cube to the rules
+    is not definitively known. One of those who stood at the origins of this
+    event was the great Russian Prince Dmitry Pavlovich Romanov (in the photo),
+    who lived in America at that time.
+  </p>
+  <div class="img-container">
+    <img src="../romanov.jpg" alt="Romanov portrait" />
+  </div>
+  <p>
+    At the beginning of each game, the stake is one point. The doubling cube is
+    in the center, and its top side shows 64. This means that there have been no
+    doubles yet. During the game, a player who feels a significant advantage may
+    turn the doubling cube so that the top side shows the number 2, thereby
+    doubling the stake. This can be done at any move, but before rolling the
+    dice. If a player to whom a doubling is offered passes, the game ends
+    immediately, and the player offering the doubling wins one point. When
+    accepting the doubling, the game continues with the stake now being two. The
+    player who accepted the doubling places the cube on their side of the board,
+    and now only they can increase the stake to 4. In theory, players can
+    increase the stake as many times as they want, taking turns showing values
+    of 2, 4, 8, 16, 32, 64, etc., but in practice, the value of the cube rarely
+    reaches large amounts.
+  </p>
+  <p>
+    If, during the game, the stake reaches two points, and a player wins with a
+    gammon, they win 4 points instead of the usual 2. If the stake reaches 4
+    points, then the winner, with a gammon, receives 8 points for the game.
+  </p>
+  <p>
+    In matches, the Crawford rule is used, which prohibits the use of the
+    doubling cube in the one game where the leader needs to score one point to
+    win the match for the first time. All other games in the match (except for
+    the decisive game, abbreviated as DG) are played with the doubling cube.
+  </p>
+  <p>
+    In money games, the Jacoby rule is often applied. It states that if the
+    doubling cube has not been used, then when winning with a gammon or
+    backgammon, the winner receives only one point, just like for a simple
+    victory. This rule encourages the player with a significant advantage to
+    take some risk and double the stake to win more points. On the other hand, a
+    player who is unlucky in the game is guaranteed not to lose more than one
+    point, as long as they do not accept the cube. Along with the Jacoby rule,
+    the Beaver rule (instant redoubling) and the Raccoon rule (another doubling
+    round) are often applied.
+  </p>
+  <p>
+    The use of the doubling cube has somewhat reduced the element of luck in the
+    games, making it more likely for skilled players to win. Now, players do not
+    necessarily have to achieve positions with a 100% success rate. It is enough
+    to exceed the threshold of 75%.
+  </p>
+  <p><strong>Example:</strong></p>
+  <p>
+    In a position where the probability of winning the game is approximately
+    75%, the leader doubles. The player behind needs to have at least 25% to
+    accept the doubling. Theoretically, they will win one doubled game out of
+    four, and the score will be 2-6 (a difference of -4 points). If the trailing
+    player does not accept the doubling, the score for four games will be 0-4.
+    The result is the same difference of -4 points. Therefore, in a game with a
+    stake, having a minimum of 25% chance of success, accepting the doubling
+    theoretically will not increase the point loss compared to refusing to
+    accept (practically, of course, it may not be so).
+  </p>
+  <p>
+    After the addition of the doubling cube, in-depth studies of the game were
+    conducted, applying a scientific approach. As a result, the following
+    emerged: <ol>
+      <li>
+        Several methods for quickly counting moves in face-to-face play (in
+        remote play, move counting is done automatically), as often an exact
+        move difference is needed to make a decision on the cube.
+      </li>
+      <li>
+        An effective move-counting formula based on simple move counting but
+        taking into account the distribution of checkers on the points.
+      </li>
+      <li>Several race formulas for non-contact positions.</li>
+      <li>
+        Several probability tables for winning with different scores in a match,
+        compiled by experts.
+      </li>
+    </ol>
+  </p>
+  <p>
+    It should be noted that not all secrets of playing with the doubling cube
+    have been uncovered yet (for example, playing with the cube in a blitz or in
+    the reverse game), so research is ongoing.
+  </p>
+</ContentSubPageLayout>
+
+<style>
+  h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+
+  blockquote {
+    margin-left: 3rem;
+    margin-right: 3rem;
+    font-style: italic;
+  }
+
+  .img-container {
+    text-align: center;
+    margin: 1rem;
+  }
+
+  img {
+    max-width: 100%;
+    max-height: 20rem;
+  }
+
+  p {
+    padding-bottom: 1rem;
+  }
+
+  ol {
+    padding-bottom: 1rem;
+  }
+
+  ol > li {
+    list-style: decimal;
+  }
+</style>

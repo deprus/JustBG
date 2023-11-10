@@ -1,0 +1,64 @@
+---
+import Navigation from "../components/Navigation.astro";
+import BaseLayout from "./BaseLayout.astro";
+const { pageTitle, bgImage } = Astro.props;
+---
+
+<BaseLayout pageTitle={pageTitle}>
+  <Navigation navTransparency="not-transparent" animation="" />
+  <main>
+    <div class={`${bgImage} main-heading-container`}>
+      <h1 class="main-heading">{pageTitle}</h1>
+    </div>
+    <slot />
+  </main>
+
+  <style>
+    main {
+      margin-top: 7.23rem;
+    }
+
+    .bg-basics {
+      background-image: url(../basics.jpg);
+    }
+    .bg-academy {
+      background-image: url(../academy.jpg);
+    }
+    .bg-masters {
+      background-image: url(../masters.jpg);
+    }
+    .bg-whereToPlay {
+      background-image: url(../whereToPlay.jpg);
+    }
+    .bg-aboutUs {
+      background-image: url(../aboutUs.jpg);
+    }
+
+    .main-heading-container {
+      background-size: cover;
+      background-position: center;
+      position: relative;
+      color: white;
+      font-size: 2.5rem;
+      height: 13rem;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .main-heading-container::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background: rgba(0, 0, 0, 0.6);
+    }
+
+    .main-heading {
+      z-index: 10;
+    }
+  </style>
+</BaseLayout>

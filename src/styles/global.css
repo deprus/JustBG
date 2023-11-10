@@ -8,12 +8,19 @@ body {
   font-family: sans-serif;
   font-size: 62,5%;
   color: black;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 a {
   font-family: sans-serif;
   text-decoration: inherit;
   color: inherit;
+}
+
+li {
+  list-style: none;
 }
 
 button {
@@ -29,6 +36,10 @@ button {
 
 .animated {
   animation: moveDown 0.5s;
+}
+
+.wrapper {
+  flex: 1;
 }
 
 @media (max-width: 640px) {
